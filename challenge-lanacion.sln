@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Domain", "src\Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Application", "src\Core\LaNacion.Application\LaNacion.Application.csproj", "{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Shared", "src\Infraestructure\LaNacion.Shared\LaNacion.Shared.csproj", "{8ABF4057-4346-4A87-9419-94D6F7A81CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABF4057-4346-4A87-9419-94D6F7A81CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABF4057-4346-4A87-9419-94D6F7A81CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABF4057-4346-4A87-9419-94D6F7A81CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABF4057-4346-4A87-9419-94D6F7A81CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{A7926876-456C-4C2C-AD3F-6A6D5A4098A3} = {284E5083-8296-458D-8A24-24E5E0CA7A3B}
 		{521A84CC-1B25-4C72-99CF-09928F0C5ADB} = {CCC4A05F-6C2C-46AB-8CE0-920981D8A1E5}
 		{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE} = {CCC4A05F-6C2C-46AB-8CE0-920981D8A1E5}
+		{8ABF4057-4346-4A87-9419-94D6F7A81CC0} = {284E5083-8296-458D-8A24-24E5E0CA7A3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BA8651F-907B-4D17-B6A6-3C2F0ED0243B}

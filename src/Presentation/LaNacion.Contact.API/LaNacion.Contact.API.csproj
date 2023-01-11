@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\LaNacion.Application\LaNacion.Application.csproj" />
     <ProjectReference Include="..\..\Infraestructure\LaNacion.Persistence\LaNacion.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infraestructure\LaNacion.Shared\LaNacion.Shared.csproj" />
   </ItemGroup>
 
 </Project>

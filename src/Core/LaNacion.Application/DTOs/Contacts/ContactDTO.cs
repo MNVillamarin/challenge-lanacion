@@ -1,4 +1,4 @@
-﻿namespace LaNacion.Application.DTOs
+﻿namespace LaNacion.Application.DTOs.Contacts
 {
     public class ContactDTO
     {

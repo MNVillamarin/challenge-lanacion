@@ -8,7 +8,7 @@ namespace LaNacion.Application
 {
     public static class ServiceExtensions
     {
-        public static void AddApplicationLayer(this IServiceCollection services)
+        public static void AddCoreApplication(this IServiceCollection services)
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
