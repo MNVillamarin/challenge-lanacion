@@ -19,4 +19,11 @@
     <ProjectReference Include="..\LaNacion.Domain\LaNacion.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Contacts\Commands\" />
+    <Folder Include="Features\Contacts\Queries\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+
 </Project>
