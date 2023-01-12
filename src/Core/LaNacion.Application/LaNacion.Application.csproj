@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Features\Contacts\Queries\" />
-    <Folder Include="Mappings\" />
   </ItemGroup>
 
 </Project>

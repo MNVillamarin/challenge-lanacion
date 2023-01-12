@@ -1,10 +1,12 @@
 using LaNacion.Application;
+using LaNacion.Contact.API.Extensions;
 using LaNacion.Persistence;
 using LaNacion.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 builder.Services.AddCoreApplication();
 builder.Services.AddInfraestructureShared();
@@ -26,7 +28,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseErrorHandlingMiddleware();
 app.MapControllers();
 
 app.Run();
