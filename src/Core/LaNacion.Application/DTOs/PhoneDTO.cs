@@ -1,6 +1,6 @@
 ﻿using LaNacion.Domain.Enums;
 
-namespace LaNacion.Application.DTOs.Contacts
+namespace LaNacion.Application.DTOs
 {
     public class PhoneDTO
     {

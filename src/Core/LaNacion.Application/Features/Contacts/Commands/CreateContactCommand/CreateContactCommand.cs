@@ -1,6 +1,6 @@
 ﻿using Application.Wrappers;
 using AutoMapper;
-using LaNacion.Application.DTOs.Contacts;
+using LaNacion.Application.DTOs;
 using LaNacion.Application.Interfaces;
 using LaNacion.Domain.Entities;
 using MediatR;

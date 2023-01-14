@@ -20,7 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Contacts\Queries\" />
+    <Folder Include="Features\Address\" />
+    <Folder Include="Features\Phones\" />
   </ItemGroup>
 
 </Project>
