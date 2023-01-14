@@ -45,6 +45,7 @@ namespace LaNacion.Contact.API.Middlewares
                         break;
                     default:
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                        responseModel.Message = "Internal Server Error. Contact Support.";
                         break;
                 }
 
