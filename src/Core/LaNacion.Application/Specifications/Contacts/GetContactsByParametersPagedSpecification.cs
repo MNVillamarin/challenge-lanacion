@@ -3,9 +3,9 @@ using LaNacion.Domain.Entities;
 
 namespace LaNacion.Application.Specifications.Contacts
 {
-    public class GetContactsByParametersPaged : Specification<Contact>
+    public class GetContactsByParametersPagedSpecification : Specification<Contact>
     {
-        public GetContactsByParametersPaged(int pageSize, int pageNumber, string? email = null, string? phoneNumber = null, string? city = null, string? state = null)
+        public GetContactsByParametersPagedSpecification(int pageSize, int pageNumber, string? email = null, string? phoneNumber = null, string? city = null, string? state = null)
         {
             //Paged
             Query

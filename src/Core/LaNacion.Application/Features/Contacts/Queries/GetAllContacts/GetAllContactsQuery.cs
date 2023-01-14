@@ -24,8 +24,8 @@ namespace LaNacion.Application.Features.Contacts.Queries.GetContactsByParameters
         private readonly IRepositoryAsync<Phone> _repositoryPhonesAsync;
         private readonly IMapper _mapper;
 
-        public GetAllContactsHandler(IRepositoryAsync<Contact> repositoryContactsAsync, IRepositoryAsync<Phone> repositoryPhonesAsync,
-            IRepositoryAsync<Address> repositoryAddressesAsync, IMapper mapper)
+        public GetAllContactsHandler(IRepositoryAsync<Contact> repositoryContactsAsync,
+            IRepositoryAsync<Phone> repositoryPhonesAsync, IMapper mapper)
         {
             _repositoryContactsAsync = repositoryContactsAsync;
             _repositoryPhonesAsync = repositoryPhonesAsync;
@@ -36,7 +36,7 @@ namespace LaNacion.Application.Features.Contacts.Queries.GetContactsByParameters
         {
             List<Contact> contactList = new List<Contact>();
 
-            contactList = await _repositoryContactsAsync.ListAsync(new GetContactsByParametersPaged(
+            contactList = await _repositoryContactsAsync.ListAsync(new GetContactsByParametersPagedSpecification(
                 request.PageSize,
                 request.PageNumber,
                 request.Email,

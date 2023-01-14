@@ -4,6 +4,7 @@ using LaNacion.Application.Features.Contacts.Commands.UpdateContactCommand;
 using LaNacion.Application.Features.Contacts.Queries.GetAllContacts;
 using LaNacion.Application.Features.Contacts.Queries.GetContactById;
 using LaNacion.Application.Features.Contacts.Queries.GetContactsByParameters;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LaNacion.Contact.API.Controllers
@@ -33,9 +34,11 @@ namespace LaNacion.Contact.API.Controllers
 
         //POST api/Contact
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> Post(CreateContactCommand command)
         {
-            return Ok(await Mediator.Send(command));
+            var response = await Mediator.Send(command);
+            return Created(Request.GetEncodedUrl() + "/" + response.Data, response);
         }
 
         //PUT api/Contact/{id}
