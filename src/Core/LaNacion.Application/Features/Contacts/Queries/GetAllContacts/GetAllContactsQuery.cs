@@ -46,8 +46,8 @@ namespace LaNacion.Application.Features.Contacts.Queries.GetContactsByParameters
 
             var clientesDto = _mapper.Map<List<ContactDTO>>(contactList);
 
-            var totalCount = clientesDto.Count;
-            var pageCount = (totalCount / request.PageSize) + 1;
+            var totalCount = await _repositoryContactsAsync.CountAsync();
+            var pageCount = (totalCount / request.PageSize);
 
             return new PagedResponse<List<ContactDTO>>(clientesDto, request.PageNumber, totalCount, request.PageSize, pageCount);
         }

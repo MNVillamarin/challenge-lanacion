@@ -11,15 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0FBC1D24-EB91-46F6-B49A-23F674FA8DD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Contact.API", "src\Presentation\LaNacion.Contact.API\LaNacion.Contact.API.csproj", "{D337CCE3-6389-4C3A-B54C-2635406E0AA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Contact.API", "src\Presentation\LaNacion.Contact.API\LaNacion.Contact.API.csproj", "{D337CCE3-6389-4C3A-B54C-2635406E0AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Persistence", "src\Infraestructure\LaNacion.Persistence\LaNacion.Persistence.csproj", "{A7926876-456C-4C2C-AD3F-6A6D5A4098A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Persistence", "src\Infraestructure\LaNacion.Persistence\LaNacion.Persistence.csproj", "{A7926876-456C-4C2C-AD3F-6A6D5A4098A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Domain", "src\Core\LaNacion.Domain\LaNacion.Domain.csproj", "{521A84CC-1B25-4C72-99CF-09928F0C5ADB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Domain", "src\Core\LaNacion.Domain\LaNacion.Domain.csproj", "{521A84CC-1B25-4C72-99CF-09928F0C5ADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Application", "src\Core\LaNacion.Application\LaNacion.Application.csproj", "{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Application", "src\Core\LaNacion.Application\LaNacion.Application.csproj", "{697215A1-38B5-4A6E-AEC7-1AEB7585C2EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Shared", "src\Infraestructure\LaNacion.Shared\LaNacion.Shared.csproj", "{8ABF4057-4346-4A87-9419-94D6F7A81CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Shared", "src\Infraestructure\LaNacion.Shared\LaNacion.Shared.csproj", "{8ABF4057-4346-4A87-9419-94D6F7A81CC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E0C8C606-07D7-405B-B09E-097E1415E046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
