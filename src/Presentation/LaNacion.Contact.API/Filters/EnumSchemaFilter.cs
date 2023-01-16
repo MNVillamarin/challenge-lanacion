@@ -2,7 +2,7 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace LaNacion.Contact.API.Filters
+namespace LaNacion.Contacts.API.Filters
 {
     public class EnumSchemaFilter : ISchemaFilter
     {

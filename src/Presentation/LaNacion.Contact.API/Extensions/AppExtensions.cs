@@ -1,6 +1,6 @@
-﻿using LaNacion.Contact.API.Middlewares;
+﻿using LaNacion.Contacts.API.Middlewares;
 
-namespace LaNacion.Contact.API.Extensions
+namespace LaNacion.Contacts.API.Extensions
 {
     public static class AppExtensions
     {

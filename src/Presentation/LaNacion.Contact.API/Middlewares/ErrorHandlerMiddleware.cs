@@ -4,7 +4,7 @@ using LaNacion.Application.Exceptions;
 using System.Net;
 using System.Text.Json;
 
-namespace LaNacion.Contact.API.Middlewares
+namespace LaNacion.Contacts.API.Middlewares
 {
     public class ErrorHandlerMiddleware
     {

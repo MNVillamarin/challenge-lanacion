@@ -36,7 +36,7 @@ namespace LaNacion.Application.Features.Contacts.Commands.UpdateContactCommand
 
             contact = _mapper.Map(request, contact);
             await _repositoryAsync.UpdateAsync(contact);
-
+            await _repositoryAsync.SaveChangesAsync();
             return new Response<int>(contact.Id);
         }
     }

@@ -27,7 +27,7 @@ namespace LaNacion.Application.Features.Phones.Commands.DeletePhoneCommand
                 throw new KeyNotFoundException($"Phone not found with id: {request.Id}.");
 
             await _repositoryPhoneAsync.DeleteAsync(phone);
-
+            await _repositoryPhoneAsync.SaveChangesAsync();
             return new Response<int>(phone.Id);
         }
     }

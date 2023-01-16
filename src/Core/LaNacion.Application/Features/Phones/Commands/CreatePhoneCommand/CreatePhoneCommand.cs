@@ -37,7 +37,7 @@ namespace LaNacion.Application.Features.Phones.Commands.CreatePhoneCommand
 
             var newRecord = _mapper.Map<Phone>(request);
             var data = await _repositoryPhoneAsync.AddAsync(newRecord);
-
+            await _repositoryPhoneAsync.SaveChangesAsync();
             return new Response<int>(data.Id);
         }
     }

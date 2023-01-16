@@ -21,14 +21,12 @@ namespace LaNacion.Application.Features.Contacts.Queries.GetContactsByParameters
     public class GetAllContactsHandler : IRequestHandler<GetAllContactsQuery, PagedResponse<List<ContactDTO>>>
     {
         private readonly IRepositoryAsync<Contact> _repositoryContactsAsync;
-        private readonly IRepositoryAsync<Phone> _repositoryPhonesAsync;
         private readonly IMapper _mapper;
 
         public GetAllContactsHandler(IRepositoryAsync<Contact> repositoryContactsAsync,
-            IRepositoryAsync<Phone> repositoryPhonesAsync, IMapper mapper)
+            IMapper mapper)
         {
             _repositoryContactsAsync = repositoryContactsAsync;
-            _repositoryPhonesAsync = repositoryPhonesAsync;
             _mapper = mapper;
         }
 

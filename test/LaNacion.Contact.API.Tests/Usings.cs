@@ -1,0 +1,12 @@
+global using Application.Wrappers;
+global using LaNacion.Application.DTOs;
+global using LaNacion.Application.Features.Contacts.Queries.GetAllContacts;
+global using LaNacion.Application.Features.Contacts.Queries.GetContactById;
+global using LaNacion.Application.Features.Contacts.Queries.GetContactsByParameters;
+global using LaNacion.Application.Wrappers;
+global using LaNacion.Contacts.API.Controllers;
+global using LaNacion.Contacts.API.Tests.Helpers;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Moq;
+global using Xunit;

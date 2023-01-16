@@ -34,7 +34,7 @@ namespace LaNacion.Application.Features.Contacts.Commands.CreateContactCommand
         {
             var newRecord = _mapper.Map<Contact>(request);
             var data = await _repositoryAsync.AddAsync(newRecord);
-
+            await _repositoryAsync.SaveChangesAsync();
             return new Response<int>(data.Id);
         }
     }

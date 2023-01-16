@@ -27,7 +27,7 @@ namespace LaNacion.Application.Features.Addresses.Commands.DeleteAddressCommand
                 throw new KeyNotFoundException($"Address not found with id: {request.Id}.");
 
             await _repositoryAddressAsync.DeleteAsync(address);
-
+            await _repositoryAddressAsync.SaveChangesAsync();
             return new Response<int>(address.Id);
         }
     }

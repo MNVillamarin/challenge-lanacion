@@ -30,11 +30,11 @@ namespace LaNacion.Application.Features.Phones.Commands.UpdatePhoneCommand
             var phone = await _repositoryPhoneAsync.GetByIdAsync(request.Id);
 
             if (phone == null)
-                throw new KeyNotFoundException($"Contact not found with id: {request.Id}.");
+                throw new KeyNotFoundException($"Phone not found with id: {request.Id}.");
 
             phone = _mapper.Map(request, phone);
             await _repositoryPhoneAsync.UpdateAsync(phone);
-
+            await _repositoryPhoneAsync.SaveChangesAsync();
             return new Response<int>(phone.Id);
         }
 

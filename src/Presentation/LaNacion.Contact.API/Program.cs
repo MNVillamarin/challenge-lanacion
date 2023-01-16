@@ -1,6 +1,6 @@
 using LaNacion.Application;
-using LaNacion.Contact.API.Extensions;
-using LaNacion.Contact.API.Filters;
+using LaNacion.Contacts.API.Extensions;
+using LaNacion.Contacts.API.Filters;
 using LaNacion.Persistence;
 using LaNacion.Persistence.Contexts;
 using LaNacion.Persistence.Seed;
@@ -45,6 +45,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+// Create DB on First Run and Seed data
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

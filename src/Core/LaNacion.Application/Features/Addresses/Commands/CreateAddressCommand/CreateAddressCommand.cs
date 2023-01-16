@@ -39,7 +39,7 @@ namespace LaNacion.Application.Features.Addresses.Commands.CreateAddressCommand
 
             var newRecord = _mapper.Map<Address>(request);
             var data = await _repositoryAddressAsync.AddAsync(newRecord);
-
+            await _repositoryAddressAsync.SaveChangesAsync();
             return new Response<int>(data.Id);
         }
     }

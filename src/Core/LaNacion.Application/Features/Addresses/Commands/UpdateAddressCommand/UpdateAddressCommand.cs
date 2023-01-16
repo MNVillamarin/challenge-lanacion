@@ -35,7 +35,7 @@ namespace LaNacion.Application.Features.Addresses.Commands.UpdateAddressCommand
 
             address = _mapper.Map(request, address);
             await _repositoryAddressAsync.UpdateAsync(address);
-
+            await _repositoryAddressAsync.SaveChangesAsync();
             return new Response<int>(address.Id);
         }
     }

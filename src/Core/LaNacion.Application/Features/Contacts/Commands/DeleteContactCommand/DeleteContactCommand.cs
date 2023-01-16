@@ -27,7 +27,7 @@ namespace LaNacion.Application.Features.Contacts.Commands.DeleteContactCommand
                 throw new KeyNotFoundException($"Contact not found with id: {request.Id}.");
 
             await _repositoryAsync.DeleteAsync(contact);
-
+            await _repositoryAsync.SaveChangesAsync();
             return new Response<int>(contact.Id);
         }
     }
