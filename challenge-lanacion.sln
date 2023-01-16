@@ -23,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Shared", "src\Infr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E0C8C606-07D7-405B-B09E-097E1415E046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Contacts.API.IntegrationTests", "test\LaNacion.Contacts.API.IntegrationTests\LaNacion.Contacts.API.IntegrationTests.csproj", "{9872C5F4-24BB-43D1-ABAC-AAEB4F9B0BDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Contacts.API.IntegrationTests", "test\LaNacion.Contacts.API.IntegrationTests\LaNacion.Contacts.API.IntegrationTests.csproj", "{9872C5F4-24BB-43D1-ABAC-AAEB4F9B0BDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaNacion.Application.UnitTests", "test\LaNacion.Application.UnitTests\LaNacion.Application.UnitTests.csproj", "{8C00C4C4-692D-4E88-A99E-308CDB4867F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaNacion.Application.UnitTests", "test\LaNacion.Application.UnitTests\LaNacion.Application.UnitTests.csproj", "{8C00C4C4-692D-4E88-A99E-308CDB4867F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

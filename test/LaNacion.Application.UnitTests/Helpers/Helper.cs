@@ -1,26 +1,16 @@
-﻿using AutoMapper;
-using LaNacion.Application.Interfaces;
-using LaNacion.Application.Mappings;
-using LaNacion.Domain.Entities;
-using LaNacion.Persistence.Contexts;
-using LaNacion.Persistence.Repository;
-using LaNacion.Persistence.Seed;
-using LaNacion.Shared.Services;
-using Microsoft.EntityFrameworkCore;
-
-namespace LaNacion.Contacts.API.Tests.Helpers
+﻿namespace LaNacion.Application.UnitTests.Helpers
 {
-    public class ContextHelper
+    public class Helper
     {
         private readonly ApplicationDbContext ApplicationDbContext;
         private readonly IDateTimeService dataTimeService;
 
-        public ContextHelper()
+        public Helper()
         {
             dataTimeService = new DateTimeService();
 
             var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            builder.UseInMemoryDatabase(databaseName: "ContactsDbInMemory");
+            builder.UseInMemoryDatabase($"{Guid.NewGuid()}.{Guid.NewGuid()}");
 
             var dbContextOptions = builder.Options;
             ApplicationDbContext = new ApplicationDbContext(dbContextOptions, dataTimeService);

@@ -38,8 +38,6 @@ namespace LaNacion.Contacts.API.IntegrationTests.Helpers
 
                 await ApplicationDbContextSeed.SeedSampleDataAsync(applicationDbContext);
 
-                services.AddScoped<ApplicationDbContext>();
-
             });
 
             builder.UseEnvironment("Development");
