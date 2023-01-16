@@ -58,12 +58,9 @@ namespace LaNacion.Contacts.API.Controllers
 
         //Delete api/Contact/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteContact(DeleteContactCommand command, int id)
+        public async Task<IActionResult> DeleteContact(int id)
         {
-            if (command.Id != id)
-                return BadRequest();
-
-            return Ok(await _mediator.Send(command));
+            return Ok(await _mediator.Send(new DeleteContactCommand { Id = id }));
         }
     }
 }

@@ -22,4 +22,8 @@
     <ProjectReference Include="..\..\Infraestructure\LaNacion.Shared\LaNacion.Shared.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include ="LaNacion.Contacts.API.IntegrationTests"/>
+	</ItemGroup>
+
 </Project>

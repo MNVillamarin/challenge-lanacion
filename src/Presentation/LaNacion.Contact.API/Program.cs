@@ -11,11 +11,11 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 //ILogger Save to file
-builder.Services.AddLogging(loggingBuilder =>
-{
-    var loggingSection = builder.Configuration.GetSection("Logging");
-    loggingBuilder.AddFile(loggingSection);
-});
+//builder.Services.AddLogging(loggingBuilder =>
+//{
+//    var loggingSection = builder.Configuration.GetSection("Logging");
+//    loggingBuilder.AddFile(loggingSection);
+//});
 
 
 // Add services to the container.
@@ -84,3 +84,5 @@ app.UseCors("CorsPolicy");
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

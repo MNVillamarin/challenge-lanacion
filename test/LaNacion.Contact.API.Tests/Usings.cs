@@ -8,5 +8,6 @@ global using LaNacion.Contacts.API.Controllers;
 global using LaNacion.Contacts.API.Tests.Helpers;
 global using MediatR;
 global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Testing;
 global using Moq;
 global using Xunit;

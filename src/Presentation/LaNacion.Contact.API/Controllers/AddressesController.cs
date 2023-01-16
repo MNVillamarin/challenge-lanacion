@@ -50,12 +50,9 @@ namespace LaNacion.Contacts.API.Controllers
 
         //Delete api/Address/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAddress(DeleteAddressCommand command, int id)
+        public async Task<IActionResult> DeleteAddress(int id)
         {
-            if (command.Id != id)
-                return BadRequest();
-
-            return Ok(await _mediator.Send(command));
+            return Ok(await _mediator.Send(new DeleteAddressCommand { Id = id }));
         }
     }
 }
