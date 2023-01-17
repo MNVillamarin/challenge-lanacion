@@ -31,7 +31,7 @@ image, email, birthdate, phone number (work, personal) and address.
 ## Instructions
 ### Settings
 * **PostgreSQLConnection**: Write the connection string to your PostgreSQL database.
-> _WebAPI: appsettings.Development.json_
+> src/Presentation/LaNacion.Contacts.API: appsettings.json_
 ```json
 "ConnectionStrings": {
   "DefaultConnection": ""
@@ -40,7 +40,6 @@ image, email, birthdate, phone number (work, personal) and address.
 
 
 ### Migration & Execution
-* Execute commands in the terminal:
-  * `dotnet ef migrations add "First" --startup-project LaNacion.Contacts.API --project LaNacion.Persistence --output-dir Migrations`
-  * `dotnet ef database update --startup-project LaNacion.Contacts.API --project LaNacion.Persistence`
+* Execute commands in the package manager console:
+  * `update-database`
 * Run Project from **LaNacion.Contacts.API**
