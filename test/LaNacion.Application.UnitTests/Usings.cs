@@ -1,6 +1,9 @@
+global using Application.Exceptions;
 global using Application.Wrappers;
 global using AutoMapper;
+global using FluentValidation.Results;
 global using LaNacion.Application.DTOs;
+global using LaNacion.Application.Exceptions;
 global using LaNacion.Application.Features.Addresses.Commands.CreateAddressCommand;
 global using LaNacion.Application.Features.Addresses.Commands.DeleteAddressCommand;
 global using LaNacion.Application.Features.Addresses.Commands.UpdateAddressCommand;

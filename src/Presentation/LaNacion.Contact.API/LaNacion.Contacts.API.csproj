@@ -7,12 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="11.1.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="NReco.Logging.File" Version="1.1.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
@@ -23,7 +17,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include ="LaNacion.Contacts.API.IntegrationTests"/>
+		<InternalsVisibleTo Include="LaNacion.Contacts.API.IntegrationTests" />
 	</ItemGroup>
 
 </Project>

@@ -1,6 +1,4 @@
-﻿using Application.Exceptions;
-using FluentValidation.Results;
-
+﻿
 namespace LaNacion.Application.UnitTests.Tests.Exceptions
 {
     public class ValidationExceptionTest

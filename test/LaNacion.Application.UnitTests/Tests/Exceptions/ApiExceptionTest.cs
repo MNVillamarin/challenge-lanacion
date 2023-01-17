@@ -1,5 +1,4 @@
-﻿using LaNacion.Application.Exceptions;
-
+﻿
 namespace LaNacion.Application.UnitTests.Tests.Exceptions
 {
     public class ApiExceptionTest
